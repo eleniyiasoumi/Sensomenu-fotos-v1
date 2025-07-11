@@ -1,0 +1,287 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(4px);
+  margin: 0;
+  color: #fff;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  width: 100vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#senso-logo {
+  height: 70px;
+  margin: 0 auto;
+  display: block;
+}
+
+#language-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;       
+  width: auto !important;      
+}
+
+
+
+main {
+  padding: 1.2rem;
+}
+
+h2, h3, h4 {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+
+#categories, #subcategories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#categories button,
+#subcategories button,
+#subsubcategories button,
+#products > button,
+button {
+  font-size: 1.2rem;
+  background-color: rgba(100, 100, 100, 0.80);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 1.2rem 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 90%;
+  max-width: 340px;
+  margin: 0rem auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+button:hover {
+  background-color: rgba(0,0,0,0.65);
+  transform: scale(1.03);
+}
+
+.menu-item {
+  background-color: rgba(100, 100, 100, 0.6); 
+  border-radius: 30px;
+  padding: 1rem 1.2rem;
+  margin: 0.3rem auto;
+  width: 90%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+}
+
+
+.menu-item div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-item strong {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.menu-item small {
+  font-size: 1.3rem;
+  color: #ddd;
+  margin-bottom: 0.3rem;
+}
+
+.menu-item span {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-right: 0.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-item {
+    flex-direction: row;
+    text-align: left;
+    padding: 0.8rem;
+    height: auto;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .menu-item img {
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+    border-radius: 1rem;
+    object-fit: cover;
+    margin-right: 0.2rem;
+  }
+
+  .menu-item div {
+    align-items: flex-start;
+  }
+
+  .menu-item strong {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+
+  .menu-item small {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+
+  .menu-item span {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+
+#products {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#products > button {
+  font-size: 1.2rem;
+  background-color: rgba(100, 100, 100, 0.80);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 1.2rem 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 90%;
+  max-width: 340px;
+  margin: 0rem auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.handwritten-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.index-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.menu-button {
+  font-size: 1.3rem;
+  background-color: rgba(100, 100, 100, 0.8);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 1.2rem 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 95%;
+  max-width: 340px;
+  margin: 0.75rem auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.subcategory-extra {
+  margin-top: 2rem;
+  padding: 0.8rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+
+.subcategory-note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  text-align: center;
+}
+
+
+#allergen-button {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  display: inline-block;
+  background: none;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  box-shadow: none;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1000;
+
+  /* Add space between the button and category boxes */
+  margin-top: 4rem;
+}

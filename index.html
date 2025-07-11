@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>Senso Café</title>
+  <link rel="stylesheet" href="styles_final_best_layout.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(4px);
+      font-family: 'Lato', sans-serif;
+    }
+
+    .index-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      padding-top: 1rem;
+    }
+
+    #senso-logo {
+      height: 80px;
+    }
+
+    .handwritten-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+      margin: 1rem 0 2rem;
+      color: white;
+    }
+
+    .language-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .language-option {
+      font-size: 1.2rem;
+      padding: 1rem 1.6rem;
+      border-radius: 30px;
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .language-option img {
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="index-container">
+    <header>
+      <img id="senso-logo" src="logo.jpg" alt="Senso Café Logo">
+    </header>
+
+    <h1 class="handwritten-title">Menu</h1>
+
+    <div class="language-buttons">
+      <a class="language-option" href="menu.html?lang=en">
+        <img src="https://flagcdn.com/w40/gb.png" alt="English"> English
+      </a>
+      <a class="language-option" href="menu.html?lang=gr">
+        <img src="https://flagcdn.com/w40/gr.png" alt="Ελληνικά"> Ελληνικά
+      </a>
+    </div>
+  </div>
+</body>
+</html>

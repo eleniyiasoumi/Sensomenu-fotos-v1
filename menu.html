@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Senso Café Menu</title>
+  <link rel="stylesheet" href="styles_final_best_layout.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&display=swap" rel="stylesheet">
+  <style>
+  #allergen-button {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-family: inherit;
+    font-size: 0.9rem;
+    text-decoration: none;
+    z-index: 1000;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <img id="senso-logo" src="logo.jpg" alt="Senso Café Logo">
+  </header>
+
+  <main>
+    <div id="categories-view">
+      <div id="categories"></div>
+<div style="margin-top: 2rem; text-align: center;">
+  <a class="language-option" id="allergen-button" href="allergens.html?lang=" + currentLang style="font-size: 1rem; padding: 0.6rem 1.2rem;">
+    <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Info" style="height: 20px;">
+    Allergen Notice
+  </a>
+</div>
+<script>
+  const lang = new URLSearchParams(window.location.search).get('lang') || 'en';
+  const allergenBtn = document.getElementById('allergen-button');
+  allergenBtn.href = `allergens.html?lang=${lang}`;
+  allergenBtn.textContent = lang === 'gr' ? 'Πληροφορίες για αλλεργίες' : 'Allergen Notice';
+</script>
+
+    </div>
+
+    <div id="subcategories-view" style="display: none;">
+      <div id="subcategories"></div>
+    </div>
+
+    <div id="products-view" style="display: none;">
+      <div id="products"></div>
+    </div>
+  </main>
+
+  <script src="senso_menu_data.js"></script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    let currentLang = urlParams.get('lang') || 'en';
+    let lastCategory = null;
+    let lastSubcategory = null;
+    let lastSubSubcategory = null;
+
+    const categoryTranslations = {
+      "Food": "Φαγητό", "Beverages": "Ροφήματα", "Alcoholic Beverages": "Αλκοολούχα Ποτά", "Wines": "Κρασιά", "Brunch": "Brunch", "Cocktails": "Κοκτέιλ"
+    };
+
+    const subcategoryTranslations = {
+      "Starters": "Ορεκτικά", "Salads": "Σαλάτες", "Sandwiches & Wraps": "Σάντουιτς & Τοστ", "Burgers": "Μπέργκερ", "Pasta": "Ζυμαρικά",
+      "Main Course": "Κυρίως Πιάτα", "Platters": "Πιατέλες", "Kids Menu": "Παιδικό Μενού", "Desserts": "Επιδόρπια","Extra Side Dish": "Έξτρα Συνοδευτικό",
+      "Cold Beverages": "Κρύα Ροφήματα", "Hot Beverages": "Ζεστά Ροφήματα", "Tea": "Τσάι", "Soft Drinks": "Αναψυκτικά", 
+      "Juices": "Χυμοί", "White Wines": "Λευκά Κρασιά", "Rose Wines": "Ροζέ Κρασιά", "Red Wines": "Κόκκινα Κρασιά",
+      "Sparkling Wines": "Αφρώδη Κρασιά", "White": "Λευκά", "Rose": "Ροζέ", "Red": "Κόκκινα", "Cyprus": "Κύπρος", "Greek": "Ελλάδα"
+    };
+
+    const categoriesDiv = document.getElementById("categories");
+    const subcategoriesDiv = document.getElementById("subcategories");
+    const productsDiv = document.getElementById("products");
+
+    function translate(label, map) {
+      return currentLang === 'gr' && label in map ? map[label] : label;
+    }
+
+    function showView(viewId) {
+      document.getElementById("categories-view").style.display = "none";
+      document.getElementById("subcategories-view").style.display = "none";
+      document.getElementById("products-view").style.display = "none";
+      document.getElementById(viewId).style.display = "block";
+    }
+
+    function showCategories(push = true) {
+      showView("categories-view");
+      if (push) history.pushState({ view: "categories" }, null);
+
+      categoriesDiv.innerHTML = "<h2 class='handwritten-title'>Menu</h2>";
+      subcategoriesDiv.innerHTML = "";
+      productsDiv.innerHTML = "";
+
+      Object.keys(menuData).forEach(categoryName => {
+        const btn = document.createElement("button");
+        btn.textContent = translate(categoryName, categoryTranslations);
+        btn.onclick = () => showSubcategories(categoryName);
+        categoriesDiv.appendChild(btn);
+      });
+    }
+
+    function showSubcategories(category, push = true) {
+      const subcatKeys = Object.keys(menuData[category]);
+      if (subcatKeys.length === 1 && (subcatKeys[0] === '-' || subcatKeys[0].trim() === '')) {
+        showProducts(category, subcatKeys[0], null, true);
+        return;
+      }
+
+      showView("subcategories-view");
+      if (push) history.pushState({ view: "subcategories", category }, null);
+
+      subcategoriesDiv.innerHTML = `<h3 style="color: white;">${translate(category, categoryTranslations)}</h3>`;
+      productsDiv.innerHTML = "";
+      lastCategory = category;
+
+      subcatKeys.forEach(subKey => {
+        const btn = document.createElement("button");
+        btn.textContent = translate(subKey, subcategoryTranslations);
+        btn.onclick = () => {
+          const subData = menuData[category][subKey];
+          lastSubcategory = subKey;
+          if (!Array.isArray(subData) && typeof subData === 'object' && !('-' in subData)) {
+            showView("products-view");
+            productsDiv.innerHTML = `<h4>${translate(subKey, subcategoryTranslations)}</h4>`;
+            subcategoriesDiv.innerHTML = "";
+            if (push) history.pushState({ view: "sub-subcategories", category, subcategory: subKey }, null);
+            Object.keys(subData).forEach(subSub => {
+              const subBtn = document.createElement("button");
+              subBtn.textContent = translate(subSub, subcategoryTranslations);
+              subBtn.onclick = () => {
+                lastSubSubcategory = subSub;
+                showProducts(category, subKey, subSub, true);
+              };
+              productsDiv.appendChild(subBtn);
+            });
+          } else {
+            showProducts(category, subKey);
+          }
+        };
+        subcategoriesDiv.appendChild(btn);
+      });
+	if (category === "Alcoholic Beverages") {
+	  const noteText = "Mixer €2.00<br>Premium Mixer €2.50";
+	
+	  const mixerNote = document.createElement("div");
+	  mixerNote.className = "subcategory-note";
+	  mixerNote.innerHTML = noteText;
+	
+	  subcategoriesDiv.appendChild(mixerNote);
+	}
+    }
+
+    function showProducts(category, subcategory, subsubcategory = null, push = true) {
+      showView("products-view");
+      if (push) history.pushState({ view: "products", category, subcategory, subsubcategory }, null);
+
+      let title = subsubcategory || subcategory;
+      if (title === "-") {
+        productsDiv.innerHTML = "";
+      } else {
+        const rawTitle = subsubcategory || subcategory;
+	const measureSuffixes = {
+	  "Blended Whiskies": " (5cl)",
+	  "Malt Whiskies": " (5cl)",
+  	  "Perpow Whiskies": " (5cl)",
+  	  "Vodka": " (5cl)",
+  	  "Imported Rum": " (5cl)",
+  	  "Imported Gin": " (5cl)",
+  	  "Imported Tequila": " (5cl)",
+  	  "Imported Liqueurs": " (5cl)",
+  	  "Aperitifs": " (5cl)",
+  	  "Brandies&Cognacs": " (5cl)"
+	};
+	const suffix = measureSuffixes[rawTitle] || "";
+	const translatedTitle = translate(rawTitle, subcategoryTranslations);
+	const fullTitle = `${translatedTitle}${suffix}`;
+	productsDiv.innerHTML = `<h4 style="color: white;">${fullTitle}</h4>`;
+
+      }
+
+      let items = [];
+      let data = menuData[category][subcategory];
+      if (subsubcategory) {
+        data = data[subsubcategory];
+      }
+
+      if (Array.isArray(data)) {
+        items = data;
+      } else {
+        Object.values(data).forEach(sublist => items.push(...sublist));
+      }
+
+      productsDiv.innerHTML += items.map(item => {
+        let html = `<div class='menu-item'>`;
+        if (item.image && item.image.trim() !== "") {
+          html += `<img src="${item.image}" alt="${item.name}">`;
+        }
+        html += `<div>
+          <strong>${item.name}</strong>
+          <small>${currentLang === 'en' ? item.description_en : item.description_gr}</small>`;
+        if (item.price) {
+          html += `<small>${item.price}</small>`;
+        }
+        if (item.allergens) {
+          html += `<span>⚠ Allergens: ${item.allergens}</span>`;
+        }
+        html += `</div></div>`;
+        return html;
+      }).join('');
+
+        // Step: Add subcategory-specific notes
+	const langParam = new URLSearchParams(window.location.search).get('lang') || 'en';
+	const extras = {
+	  "Burgers": {
+	    en: "Extra Angus Burger €5.00",
+	    gr: "Έξτρα Μπιφτέκι Angus €5.00"
+	  }
+	};
+	const notes = {
+  	  "Sandwiches&Wraps": {
+    		en: "All of the above are served with French fries and salad.",
+   		gr: "Όλα τα πιο πάνω σερβίρονται με πατάτες τηγανιτές και σαλάτα"
+  	   },
+  	  "Burgers": {
+    		en: "All of the above are served with French fries and coleslaw salad.",
+    		gr: "Όλα τα πιο πάνω σερβίρονται με πατάτες τηγανιτές και σαλάτα του κηπουρού"
+  	   }
+	};
+	if (extras.hasOwnProperty(subcategory)) {
+	  const extraText = extras[subcategory][langParam] || extras[subcategory].en;
+	  const extraDiv = document.createElement('div');
+	  extraDiv.className = 'subcategory-extra';
+	  extraDiv.textContent = extraText;
+	  productsDiv.appendChild(extraDiv);
+	}
+
+	if (notes.hasOwnProperty(subcategory)) {
+	  const noteText = notes[subcategory][langParam] || notes[subcategory].en;
+	  const noteDiv = document.createElement('div');
+	  noteDiv.className = 'subcategory-note';
+	  noteDiv.textContent = noteText;
+	  productsDiv.appendChild(noteDiv);
+	}
+
+    }
+
+    window.onpopstate = (event) => {
+      const state = event.state;
+      if (!state || state.view === "categories") {
+        showCategories(false);
+      } else if (state.view === "subcategories") {
+        showSubcategories(state.category, false);
+      } else if (state.view === "sub-subcategories") {
+        showSubcategories(state.category, false);
+        setTimeout(() => {
+          showView("products-view");
+          productsDiv.innerHTML = `<h4>${translate(state.subcategory, subcategoryTranslations)}</h4>`;
+          const subData = menuData[state.category][state.subcategory];
+          Object.keys(subData).forEach(subSub => {
+            const subBtn = document.createElement("button");
+            subBtn.classList.add("menu-button");
+            subBtn.textContent = translate(subSub, subcategoryTranslations);
+            subBtn.onclick = () => {
+              lastSubSubcategory = subSub;
+              showProducts(state.category, state.subcategory, subSub, true);
+            };
+            productsDiv.appendChild(subBtn);
+          });
+        }, 10);
+      } else if (state.view === "products") {
+        showProducts(state.category, state.subcategory, state.subsubcategory || null, false);
+      }
+    };
+
+    showCategories(true);
+  </script>
+</body>
+</html>
