@@ -121,7 +121,7 @@ const menuData = {
         "description_gr": "Βασιλικές γαρίδες με μους αβοκάντο και ντομάτες",
         "price": "€7.90",
         "allergens": "3,4,9,13",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/6gw3Zjf.jpeg"
       },
       {
         "name": "Grilled Halloumi",
@@ -129,7 +129,7 @@ const menuData = {
         "description_gr": "Χαλλούμι στη σχάρα με φρέσκια ντομάτα και ψητή πίττα",
         "price": "€7.30",
         "allergens": "2,4,7,11",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/ZnXsXad.jpeg"
       },
       {
         "name": "Wrapped Fetta",
@@ -137,7 +137,7 @@ const menuData = {
         "description_gr": "Τυρί φέτα τυλιγμένο σε φύλλο κρούστας, σερβίρεται με μαρμελάδα ντομάτας",
         "price": "€7.20",
         "allergens": "2,7",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/FIjdJAC.jpeg"
       },
       {
         "name": "Bruschetta",
@@ -145,7 +145,7 @@ const menuData = {
         "description_gr": "Δύο είδη μπρουσκέτα, η μία με πάστα ελιάς, ντομάτα και κρεμμύδι, φρέσκο δυόσμο και η άλλη με ρόκα, προσούτο και τυρί παρμεζάνα",
         "price": "€7.70",
         "allergens": "2,7,13",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/ZSvhj3o.jpeg"
       }
     ],
     "Salads": [
@@ -155,7 +155,7 @@ const menuData = {
         "description_gr": "Χωριάτικη σαλάτα με μαρούλι, ρόκα, ντομάτα, αγγουράκι, κρεμμύδι, ελιές μαύρες, κουτρούβι, τυρί φέτα και ελαιόλαδο",
         "price": "€12.50",
         "allergens": "2,7",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/05njZNe.jpeg"
       },
       {
         "name": "Quinoa Salad",
@@ -163,7 +163,7 @@ const menuData = {
         "description_gr": "Υγιεινή θρεπτική σαλάτα από κινόα, αβοκάντο, πιπεριές, φρέσκα φύλλα μαρουλιού και σπανακιού, ρόδι, αποξηραμένα χρυσόμηλα και πράσινο μήλο. Σερβίρεται με σάλτσα εσπεριδοειδών.",
         "price": "€13.90",
         "allergens": "2,4,7,9,13,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/lwudnnL.jpeg"
       },
       {
         "name": "Chicken Caesar",
@@ -171,7 +171,7 @@ const menuData = {
         "description_gr": "Σαλάτα καίσαρα με κοτόπουλο, μπέικον, μαρούλι, κρουτόνσ, ντρέσινγκ του καίσαρα, ντοματίνια και τυρί παρμεζάνας",
         "price": "€13.80",
         "allergens": "2,4,5,7,9,13",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/khkmSVV.jpeg"
       },
       {
         "name": "Rocca Salad",
@@ -179,7 +179,7 @@ const menuData = {
         "description_gr": "Φρέσκα φύλλα ρόκας συνδιασμένα με ντοματίνια, καραμελωμένα αμύγδαλα, λιαστές ντομάτες, ρόδι, αποξηραμένα σύκα, κατσικίσιο τυρί επικαλυμμένο από καβουρδισμένα πινόλια και σάλτσα από Γαλλικό ντρέσινγκ",
         "price": "€13.50",
         "allergens": "2,7,9,10,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/RWXsJAT.jpeg"
       },
       {
         "name": "King Prawns Salad",
@@ -187,7 +187,7 @@ const menuData = {
         "description_gr": "Βασιλικές γαρίδες με φύλλα μαρουλιού, αβοκάντο, κόκκινο κρεμμύδι, ντοματίνια και Γαλλικό ντρέσινγκ",
         "price": "€16.50",
         "allergens": "2,3,7,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/4PWscIe.jpeg"
       }
     ],
     "Sandwiches&Wraps": [
@@ -197,7 +197,7 @@ const menuData = {
         "description_gr": "Κοτόπουλο, κόκτεϊλ σως, μπέικον, αυγό τηγανιτό, μαρούλι, ντομάτα και αγγουράκι",
         "price": "€12.80",
         "allergens": "2,4,5,7,9,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/BjUfCUY.jpeg"
       },
       {
         "name": "Salmon Club Sandwich",
@@ -205,7 +205,7 @@ const menuData = {
         "description_gr": "Σολομός, ρόκα, γκουακαμόλε",
         "price": "€13.90",
         "allergens": "2,5,9",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/uNmiONJ.jpeg"
       },
       {
         "name": "Toasted Ham&Cheese Sandwich",
@@ -221,7 +221,7 @@ const menuData = {
         "description_gr": "Τορτίλα με κοτόπουλο, τυρί, μαρούλι και σάλτσα καίσαρα",
         "price": "€12.20",
         "allergens": "2,4,5,7,9,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/3NMTU15.jpeg"
       },
       {
         "name": "Cyprus Sandwich",
@@ -229,7 +229,7 @@ const menuData = {
         "description_gr": "Κυπριακό σάντουιτς με λούντζα και χαλλούμι μέσα σε ψωμί τσιαπάτα με ντομάτα και φύλλα ρόκας",
         "price": "€12.30",
         "allergens": "2,7,9,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/H4k7aoP.jpeg"
       }
     ],
     "Burgers": [
@@ -239,7 +239,7 @@ const menuData = {
         "description_gr": "Μπιφτέκι με μαρούλι, ντομάτα και καραμελωμένα κρεμμύδια",
         "price": "€15.50",
         "allergens": "2,4,7,9,14",
-        "image": "https://i.imgur.com/fo6Rajr.jpeg"
+        "image": "https://i.imgur.com/9bBgdXa.jpeg"
       },
       {
         "name": "Cheese Burger (250gr)",
@@ -247,7 +247,7 @@ const menuData = {
         "description_gr": "Μπιφτέκι με μαρούλι, ντομάτα, τυρί τσένταρ και καραμελωμένα κρεμμύδια",
         "price": "€15.90",
         "allergens": "2,4,7,9,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/BlGhc14.jpeg"
       },
       {
         "name": "Ultimate Greek Burger (250gr)",
@@ -255,7 +255,7 @@ const menuData = {
         "description_gr": "Μπιφτέκι με τηγανητή παναρισμένη φέτα, μαρούλι, ντομάτα, μαρμελάδα ντομάτας-κρεμμυδιού και καραμελωμένα κρεμμύδια",
         "price": "€16.50",
         "allergens": "2,4,7,9,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/b706fbP.jpeg"
       },
       {
         "name": "Hunter Burger (250gr)",
@@ -263,7 +263,7 @@ const menuData = {
         "description_gr": "Μπιφτέκι με κρεμώδη σάλτσα μανιταριών",
         "price": "€16.50",
         "allergens": "2,4,7,9,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/1Nevkg0.jpeg"
       },
       {
         "name": "Texas Burger (250gr)",
@@ -271,7 +271,7 @@ const menuData = {
         "description_gr": "Μπιφτέκι με μαρούλι, ντομάτα, μπέικον, σάλτσα μπάρπεκιου και καραμελωμένα κρεμμύδια",
         "price": "€16.80",
         "allergens": "2,4,7,9,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/5RfDtid.jpeg"
       },
       {
         "name": "Senso House Burger (250gr)",
@@ -279,7 +279,7 @@ const menuData = {
         "description_gr": "Μπιφτέκι με μαρούλι, ντομάτα, τηγανητό αυγό, μπέικον, τυρί τσένταρ και καραμελωμένα κρεμμύδια",
         "price": "€17.50",
         "allergens": "2,4,7,9,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/y6lStxr.jpeg"
       },
       {
         "name": "Veggie Burger",
@@ -287,7 +287,7 @@ const menuData = {
         "description_gr": "100% Μπιφτέκι λαχανικών με μαρούλι, ντομάτα και καραμελωμένα κρεμμύδια",
         "price": "€15.50",
         "allergens": "2,4,7,9,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/UlN4fOp.jpeg"
       }
     ],
     "Pasta": [
@@ -297,7 +297,7 @@ const menuData = {
         "description_gr": "Καπνιστή πανσέτα με αρωματισμένα μανιτάρια, φρέσκα κρέμα και τυρί παρμεζάνα",
         "price": "€14.80",
         "allergens": "1,2,7",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/oBaO8Ue.jpeg"
       },
       {
         "name": "Spaghetti Bolognaise",
@@ -305,7 +305,7 @@ const menuData = {
         "description_gr": "Σπαγγέτι με σάλτσα μπολονέζ",
         "price": "€13.80",
         "allergens": "1,2,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/OzNw8Bb.jpeg"
       },
       {
         "name": "Penne Chicken Quatro Formaggi",
@@ -313,7 +313,7 @@ const menuData = {
         "description_gr": "Πέννες με κοτόπουλο και κρεμώδη σάλτσα τυριών",
         "price": "€14.90",
         "allergens": "1,2,7,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/kUrvb3K.jpeg"
       },
       {
         "name": "Seafood Tagliatelle",
@@ -321,7 +321,7 @@ const menuData = {
         "description_gr": "Ταλιατέλες με βασιλικές γαρίδες, σολομό, σάλτσα ντομάτας, φρέσκα κρέμα και παρμεζάνα",
         "price": "€16.90",
         "allergens": "1,2,3,5,7,8,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/p2vJ5Vg.jpeg"
       }
     ],
     "Main Course": [
@@ -331,7 +331,7 @@ const menuData = {
         "description_gr": "Μεγάλη ζουμερή χοιρινή μπριζόλα ψημένη στη σχάρα, σερβιρισμένη με τζατζίκι, λαχανικά σωτέ και πατάτες τηγανητές",
         "price": "€17.50",
         "allergens": "2,7,9,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/Xdpix7E.jpeg"
       },
       {
         "name": "Grilled Chicken Fillet",
@@ -339,7 +339,7 @@ const menuData = {
         "description_gr": "Στήθος κοτόπουλο ψημένο στη σχάρα σερβιρισμένο με λαχανικά σωτέ και πατάτες τηγανητές",
         "price": "€14.90",
         "allergens": "2,9,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/Ht2DIka.jpeg"
       },
       {
         "name": "Chicken Kebab",
@@ -347,7 +347,7 @@ const menuData = {
         "description_gr": "Σουβλάκι στη σχάρα από μαριναρισμένο στήθος κοτόπουλο. Σερβίρεται με φρέσκα σαλάτα, πίττα, τζατζίκι και τηγανητές πατάτες",
         "price": "€14.00",
         "allergens": "2,7",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/QSbi1rg.jpeg"
       },
       {
         "name": "Pork Kebab",
@@ -355,7 +355,7 @@ const menuData = {
         "description_gr": "Χοιρινό σουβλάκι στη σχάρα, σερβίρεται με φρέσκα σαλάτα, πίττα, τζατζίκι και τηγανητές πατάτες",
         "price": "€13.00",
         "allergens": "2,7",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/fvI881v.jpeg"
       },
       {
         "name": "Chicken a la Cream",
@@ -363,7 +363,7 @@ const menuData = {
         "description_gr": "Κοτόπουλο φιλέτο με κρεμώδη σάλτσα μανιταριού. Σερβίρεται με ρύζι και λαχανικά σωτέ",
         "price": "€16.50",
         "allergens": "1,2,7,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/AZgMnot.jpeg"
       },
       {
         "name": "Chicken Fajitas",
@@ -371,7 +371,7 @@ const menuData = {
         "description_gr": "Στήθος κοτόπουλο αναμειγμένο στο τηγάνι με μπαχαρικά Μεξικού, πιπεριές, κρεμμύδι, σβησμένα με λάιμ σε μεξικάνικες τορτίγιες. Συνοδεύονται με ξινή κρέμα (sour cream), σπιτικό γκουακαμόλε και νάτσος",
         "price": "€16.80",
         "allergens": "2,7,10",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/AA7nIQT.jpeg"
       },
       {
         "name": "Prawn Fajitas",
@@ -387,7 +387,7 @@ const menuData = {
         "description_gr": "Φιλέτο σολομού με σάλτσα τεριγιάκι ψημένο και σερβιρισμένο με ρύζι στιρ φράι λαχανικά και σισαμέλαιο",
         "price": "€19.90",
         "allergens": "2,5,12,13",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/1JyS8Yj.jpeg"
       },
       {
         "name": "Deep Fried Calamari",
@@ -395,7 +395,7 @@ const menuData = {
         "description_gr": "Καλαμάρι τηγανητό, σερβιρισμένο με πατάτες τηγανητές, εποχιακή σαλάτα και ταρταρ σως",
         "price": "€21.50",
         "allergens": "2,4,7,8,9,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/l4vqqqt.jpeg"
       },
       {
         "name": "Prime Angus Rib Eye Steak (300gr)",
@@ -413,7 +413,7 @@ const menuData = {
         "description_gr": "Από 4 κομμάτια κρεμμύδια ροδέλλες, φτερούγες κοτόπουλο, σπρινγκ ρολλς, μοτσαρέλλα στικς, κοτομπουκιές, ένα λουκάνικο με BBQ σάλτσα και σάλτσα από γλυκό τσίλι",
         "price": "€16.90",
         "allergens": "2,7,13,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/IYCBgNV.jpeg"
       },
       {
         "name": "Wine Platter for two",
@@ -461,7 +461,7 @@ const menuData = {
         "description_gr": "Πιατέλα από 4 διαφορετικά λουκάνικα, σερβίρεται με ψωμί μπακέτα, Αγγλική μουστάρδα και BBQ σάλτσα",
         "price": "€14.00",
         "allergens": "2,7,9,13,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/o4ISYrl.jpeg"
       }
     ],
     "Kids Menu": [
@@ -487,7 +487,7 @@ const menuData = {
         "description_gr": "",
         "price": "€9.30",
         "allergens": "2",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/djuCOmq.jpeg"
       },
       {
         "name": "Chicken Wings",
@@ -495,7 +495,7 @@ const menuData = {
         "description_gr": "",
         "price": "€10.50",
         "allergens": "2",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/17FLnqd.jpeg"
       },
       {
         "name": "Mozzarella Sticks",
@@ -503,7 +503,7 @@ const menuData = {
         "description_gr": "",
         "price": "€9.80",
         "allergens": "2,7",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/z0rPoyg.jpeg"
       }
     ],
     "Desserts": [
@@ -569,7 +569,7 @@ const menuData = {
         "description_gr": "Επιλογή από πραλίνα σοκολάτα ή άσπρη σοκολάτα.<br><br>€6.50<br><br><br><strong>Έξτρα:</strong><br>Φράουλες: €1.50<br>Maltesers: €1.00<br>Μπανάνα: €0.70<br>Μπισκότα: €0.50<br>Ξηροί καρποί: €0.50<br>Παγωτό: €1.20",
         "price": "",
         "allergens": "2,4,7",
-        "image": "https://via.placeholder.com/80"
+        "image": ""
       }
     ],
     "Extra Side Dish": [
