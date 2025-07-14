@@ -188,9 +188,11 @@
 	};
 	const suffix = measureSuffixes[rawTitle] || "";
 	const translatedTitle = translate(rawTitle, subcategoryTranslations);
-	const fullTitle = `${translatedTitle}${suffix}`;
-	productsDiv.innerHTML = `<h4 style="color: white;">${fullTitle}</h4>`;
-
+	let customTitle = translatedTitle + suffix;
+	if (category === "Food" && subcategory === "Burgers") {
+	  customTitle = "Home Made Angus Beefburgers (250gr)";
+	}
+	productsDiv.innerHTML = `<h4 style="color: white;">${customTitle}</h4>`;
       }
 
       let items = [];
