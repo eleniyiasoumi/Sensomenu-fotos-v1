@@ -234,7 +234,7 @@ const menuData = {
     ],
     "Burgers": [
       {
-        "name": "Classic Home Made Burger (250gr)",
+        "name": "Classic Home Made Burger",
         "description_en": "Burger with lettuce, tomato and caramelised onions",
         "description_gr": "Μπιφτέκι με μαρούλι, ντομάτα και καραμελωμένα κρεμμύδια",
         "price": "€15.50",
@@ -242,7 +242,7 @@ const menuData = {
         "image": "https://i.imgur.com/9bBgdXa.jpeg"
       },
       {
-        "name": "Cheese Burger (250gr)",
+        "name": "Cheese Burger",
         "description_en": "Burger with lettuce, tomato, cheddar cheese and caramelised onions",
         "description_gr": "Μπιφτέκι με μαρούλι, ντομάτα, τυρί τσένταρ και καραμελωμένα κρεμμύδια",
         "price": "€15.90",
@@ -250,7 +250,7 @@ const menuData = {
         "image": "https://i.imgur.com/BlGhc14.jpeg"
       },
       {
-        "name": "Ultimate Greek Burger (250gr)",
+        "name": "Ultimate Greek Burger",
         "description_en": "Burger with deep fried fetta cheese, lettuce, tomatoes, tomato-onion marmalade and caramelised onions",
         "description_gr": "Μπιφτέκι με τηγανητή παναρισμένη φέτα, μαρούλι, ντομάτα, μαρμελάδα ντομάτας-κρεμμυδιού και καραμελωμένα κρεμμύδια",
         "price": "€16.50",
@@ -258,7 +258,7 @@ const menuData = {
         "image": "https://i.imgur.com/b706fbP.jpeg"
       },
       {
-        "name": "Hunter Burger (250gr)",
+        "name": "Hunter Burger",
         "description_en": "Burger with creamy mushroom sauce",
         "description_gr": "Μπιφτέκι με κρεμώδη σάλτσα μανιταριών",
         "price": "€16.50",
@@ -266,7 +266,7 @@ const menuData = {
         "image": "https://i.imgur.com/1Nevkg0.jpeg"
       },
       {
-        "name": "Texas Burger (250gr)",
+        "name": "Texas Burger",
         "description_en": "Burger with lettuce, tomato, bacon, barbeque sauce and caramelised onions",
         "description_gr": "Μπιφτέκι με μαρούλι, ντομάτα, μπέικον, σάλτσα μπάρπεκιου και καραμελωμένα κρεμμύδια",
         "price": "€16.80",
@@ -274,7 +274,7 @@ const menuData = {
         "image": "https://i.imgur.com/5RfDtid.jpeg"
       },
       {
-        "name": "Senso House Burger (250gr)",
+        "name": "Senso House Burger",
         "description_en": "Burger with lettuce, tomato, fried egg, bacon, cheddar cheese and caramelised onions",
         "description_gr": "Μπιφτέκι με μαρούλι, ντομάτα, τηγανητό αυγό, μπέικον, τυρί τσένταρ και καραμελωμένα κρεμμύδια",
         "price": "€17.50",
