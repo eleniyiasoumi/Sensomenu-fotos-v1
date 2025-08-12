@@ -421,7 +421,7 @@ const menuData = {
         "description_gr": "Πιατέλα με διάφορα τυριά και αλλαντικά για δύο άτομα",
         "price": "€19.00",
         "allergens": "2,7,14",
-        "image": "https://via.placeholder.com/80"
+        "image": ""
       },
       {
         "name": "Wine Platter for four",
@@ -429,7 +429,7 @@ const menuData = {
         "description_gr": "Πιατέλα με διάφορα τυριά και αλλαντικά για τέσσερα άτομα",
         "price": "€35.00",
         "allergens": "2,7,14",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/CKvblZj.jpeg"
       },
       {
         "name": "Seasonal Fruit Platter",
@@ -437,7 +437,7 @@ const menuData = {
         "description_gr": "Πιατέλα με φρούτα εποχής",
         "price": "€24.00",
         "allergens": "",
-        "image": "https://via.placeholder.com/80"
+        "image": ""
       },
       {
         "name": "Nachos Platter",
@@ -445,7 +445,7 @@ const menuData = {
         "description_gr": "Πιατέλα με νάτσος λιωμένο τυρί, σερβίρεται με σως τυριού, κουακαμόλε και σάλτσα άγριας ντομάτας",
         "price": "€9.90",
         "allergens": "2,7,13",
-        "image": "https://via.placeholder.com/80"
+        "image": ""
       },
       {
         "name": "Meat Platter",
@@ -453,7 +453,7 @@ const menuData = {
         "description_gr": "Κοτόπουλο στήθος, χοιρινό & κοτόπουλο σουβλάκι, λουκάνικο σχάρας. Σερβίρεται με σωτέ λαχανικά, χαλούμι σχάρας, τζατζίκι και πίττα",
         "price": "€46.00",
         "allergens": "2,7,14",
-        "image": "https://via.placeholder.com/80"
+        "image": ""
       },
       {
         "name": "Sausage Platter",
