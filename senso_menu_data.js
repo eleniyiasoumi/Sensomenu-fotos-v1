@@ -213,7 +213,7 @@ const menuData = {
         "description_gr": "Τριπλό σάντουιτς με τυρί και ζαμπόν",
         "price": "€10.30",
         "allergens": "2,7",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/oFBVz9z.jpeg"
       },
       {
         "name": "Chicken Wrap",
@@ -513,7 +513,7 @@ const menuData = {
         "description_gr": "",
         "price": "€7.60",
         "allergens": "2,4,7,10,13",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/COOcKoM.jpeg"
       },
       {
         "name": "Apple Pie with Ice Cream",
@@ -521,7 +521,7 @@ const menuData = {
         "description_gr": "",
         "price": "€6.80",
         "allergens": "2,4,7,10,13",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/5knnXK7.jpeg"
       },
       {
         "name": "Fried Ice Cream",
@@ -529,7 +529,7 @@ const menuData = {
         "description_gr": "Σερβίρεται με επιλογή σάλτσας: σοκολάτα ή φράουλα",
         "price": "€9.50",
         "allergens": "2,4,7,10,11,13",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/DWFOZ2X.jpeg"
       },
       {
         "name": "Blueberry Cheese Cake",
@@ -537,7 +537,7 @@ const menuData = {
         "description_gr": "",
         "price": "€7.60",
         "allergens": "2,4,7,13",
-        "image": "https://via.placeholder.com/80"
+        "image": "https://i.imgur.com/4I6FEvt.jpeg"
       },
       {
         "name": "Choice of Ice Cream (1 scoop)",
