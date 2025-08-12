@@ -379,7 +379,7 @@ const menuData = {
         "description_gr": "Γαρίδες αναμειγμένες στο τηγάνι με μπαχαρικά Μεξικού, πιπεριές, κρεμμύδι, σβησμένα με λάιμ σε μεξικάνικες τορτίγιες. Συνοδεύονται με ξινή κρέμα (sour cream), σπιτικό γκουακαμόλε και νάτσος",
         "price": "€17.50",
         "allergens": "2,3,7,10",
-        "image": "https://via.placeholder.com/80"
+        "image": ""
       },
       {
         "name": "Salmon Fillet",
@@ -403,7 +403,7 @@ const menuData = {
         "description_gr": "Βοδινό Άνγκους στέικ ψημένο στη σχάρα όπως εσείς επιθυμείτε, σερβίρεται με λαχανικά σωτέ και πατάτες τηγανητές",
         "price": "€35.00",
         "allergens": "2",
-        "image": "https://via.placeholder.com/80"
+        "image": ""
       }
     ],
     "Platters": [
@@ -574,7 +574,7 @@ const menuData = {
     ],
     "Extra Side Dish": [
       {
-        "name": "Largec French Fries",
+        "name": "Large French Fries",
         "description_en": "",
         "description_gr": "",
         "price": "€5.50",
